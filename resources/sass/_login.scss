@@ -1,0 +1,68 @@
+main {
+    &.login-page {
+        display: flex;
+        align-items: center;
+
+        .card {
+
+            &-header {
+                text-align: center;
+                font-weight: bold;
+                font-size: 22px;
+            }
+            
+            .col-form-label {
+                font-size: 18px;
+            }
+
+            .m-form-control {
+                height: 45px;
+            }
+
+            button {
+                padding: 8px 30px;
+                font-size: 18px;
+                font-weight: bold;
+                margin-top: 20px;
+            }
+
+            .forgot-link {
+                text-align: center;
+                margin-top: 20px;
+                font-size: 14px;
+                color: #1d68a7;
+                text-decoration: underline;
+                font-style: italic;
+            }
+        }
+
+        &.buy-page {
+            flex-direction: column;
+            justify-content: center;
+
+            p {
+
+                &:first-child {
+                    font-size: 20px;
+                    margin-bottom: 20px;
+
+                    a {
+                        text-decoration: underline;
+                        color: #55acee;
+
+                        &:hover {
+                            color: #3490dc;
+                        }
+                    }
+                }
+
+                &:last-child {
+                    text-align: center;
+                    line-height: 1.75;
+                    font-size: 16px;
+                    color: #424242;
+                }
+            }
+        }
+    }
+}

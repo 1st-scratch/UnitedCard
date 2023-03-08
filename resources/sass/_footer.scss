@@ -1,0 +1,105 @@
+footer {
+    padding: 90px 0 20px;
+    height: 335px;
+
+    .social-btns {
+        display: flex;
+        justify-content: center;
+        max-width: 1170px;
+        margin: auto;
+        border-top: 1px solid #DDD;
+        border-bottom: 1px solid #DDD;
+        padding: 20px 0;
+
+        @media screen and (max-width: 768px) {
+            padding: 10px 0;
+        }
+
+        &__item {
+            margin: 0 10px;
+            height: 70px;
+
+            img {
+                height: 100%;
+                width: auto;
+                object-fit: cover;
+            }
+
+            @media screen and (max-width: 768px) {
+                height: 45px;
+            }
+        }
+    }
+
+    .footer-links {
+        max-width: 850px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 50px 0 0;
+
+        @media screen and (max-width: 768px) {
+            padding: 20px 10px 20px;
+            flex-direction: column;
+        }
+
+        &__left {
+            font-size: 14px;
+            color: #676767;
+        }
+
+        &__right {
+            display: flex;
+            align-items: center;
+
+            @media screen and (max-width: 768px) {
+                margin-top: 20px;
+            }
+
+            ul {
+                display: flex;
+                padding: 0;
+
+                @media screen and (max-width: 768px) {
+                    flex-direction: column;
+                }
+
+                li {
+                    padding: 0 10px;
+                    position: relative;
+
+                    @media screen and (max-width: 768px) {
+                        padding: 0;
+                    }
+
+                    a {
+                        font-size: 14px;
+                        color: #676767;
+                    }
+
+                    &::before {
+                        position: absolute;
+                        content: '';
+                        width: 1px;
+                        height: 16px;
+                        top: 6px;
+                        right: -2px;
+                        transform: rotate(20deg);
+                        background-color: #AAA;
+
+                        @media screen and (max-width: 768px) {
+                            display: none;
+                        }
+                    }
+
+                    &:last-child {
+
+                        &::before {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
